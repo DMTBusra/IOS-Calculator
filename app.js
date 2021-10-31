@@ -102,23 +102,23 @@ comma.addEventListener("click",(e)=>{
         if(e.target.className === "fas fa-equals" || e.target.className == "equal"){
             if(updisplay.innerText.includes("+") && !downdisplay.innerText == "" ){
                    
-                updisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) + parseFloat(downdisplay.innerText) ;
-                    downdisplay.innerText = "";
+                downdisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) + parseFloat(downdisplay.innerText) ;
+                    updisplay.innerText = "";
             }
             if(updisplay.innerText.includes("-") && !downdisplay.innerText == "" ){
                    
-                updisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) - parseFloat(downdisplay.innerText) ;
-                    downdisplay.innerText = "";
+                downdisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) - parseFloat(downdisplay.innerText) ;
+                    updisplay.innerText = "";
             }
             if(updisplay.innerText.includes("/") && !downdisplay.innerText == "" ){
                    
-                updisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) / parseFloat(downdisplay.innerText) ;
-                    downdisplay.innerText = "";
+                downdisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) / parseFloat(downdisplay.innerText) ;
+                    updisplay.innerText = "";
             }
             if(updisplay.innerText.includes("*") && !downdisplay.innerText == "" ){
                    
-                updisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) * parseFloat(downdisplay.innerText) ;
-                    downdisplay.innerText = "";
+                downdisplay.innerText = parseFloat(updisplay.innerText.split(" ")[0]) * parseFloat(downdisplay.innerText) ;
+                    updisplay.innerText = "";
             }
 
          }
