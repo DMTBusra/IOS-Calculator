@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    margin-top: 2%;
+    
+    padding: 20px;
+    padding-bottom: 25px;
+    background-color:black;
+}
+
+.screen{
+    background-color:black;
+    width: 100%;
+    height:25vh;
+   
+
+}
+.numbers{
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(5,20%);    
+   
+    height:55vh;
+    grid-gap : 3px;
+    
+
+}
+
+.grey{
+    color:black;
+    background-color:rgba(235, 231, 231, 0.753);
+    
+}
+.content17{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    
+}
+#zero{
+    border-radius: 35px;
+}
+.divide,.minus,.plus,.times,.equal{
+    color: white;
+    background-color:orange;
+}
+.number,.comma{
+    background-color:rgb(53, 51, 51);
+    color: white;
+}
+button{
+    width:90%;
+    height:10vh;
+    border-radius: 50%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    border: none;
+    
+}
+.result,.operation{
+    
+    width:100%;
+    height:12vh;
+
+    color: white;
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.result{
+    font-size: 1.2rem;
+}
+@media screen and (max-width:411px) {
+    .container{
+        width:100%;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .container{
+        width:45%;
+    }
+    
+}
+@media screen and (max-width:750px) {
+    .container{
+        width:50%;
+    }
+    
+}
+
+
+
+
+
+
+
+/* .container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(7,100px );
+    
+    background-color: black;
+    
+
+   
+    
+}
+.content{
+    background-color: grey;
+    border-radius: 50%;
+    color:aqua;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+   
+    
+    
+
+}
+.content1{
+    grid-column: 1/5;
+    border-radius: 0;
+    background-color:black;
+    width:240px;
+
+
+}
+.content2{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    border-radius: 0;
+    background-color:black;
+}
+.content6,.content22,.content10,.content14,.content18{
+    color:white ;
+    background-color: orange;
+    font-weight: bolder;
+} */
